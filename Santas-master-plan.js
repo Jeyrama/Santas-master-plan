@@ -27,3 +27,6 @@ Example:
      {name: 'Tooth Fairy', response: 'accepted'} 
    ] );// => returns ['Tooth Fairy', 'Frosty the Snowman']
 */
+
+
+// Solution
