@@ -41,3 +41,12 @@ function getAttendees(peopleInvited, responses){
     return nopes.indexOf(p) === -1;
   });
 }
+
+// or
+
+function getAttendees(peopleInvited, responses){
+  responses.forEach(function(val){
+    if (val.response === 'declined') peopleInvited.splice( peopleInvited.indexOf(val.name), 1); 
+  });
+  return peopleInvited;
+}
