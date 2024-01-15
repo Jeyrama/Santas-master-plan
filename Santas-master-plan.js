@@ -30,3 +30,14 @@ Example:
 
 
 // Solution
+
+function getAttendees(peopleInvited, responses){
+
+  let nopes = responses.filter(function(r) {
+    return r.response === 'declined';
+  }).map(function(r) { return r.name });
+  
+  return peopleInvited.filter(function(p) {
+    return nopes.indexOf(p) === -1;
+  });
+}
